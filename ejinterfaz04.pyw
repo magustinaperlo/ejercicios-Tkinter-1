@@ -16,6 +16,9 @@ def reset():
 window=Tk()
 window.title("Contador")
 window.geometry('300x200')
+#fijamos los valores para que el usuario no extienda ni achique demasiado la ventana.
+window.minsize(400, 150) 
+window.maxsize(400, 150)
 window.configure(background= 'dark turquoise')
 
 
