@@ -5,7 +5,10 @@ def restar():
     lineEdit["text"]= f"{valor-1}"
 window = Tk()
 window.title("Cont. Decreciente")
-window.geometry('300x200')
+window.geometry('400x100')
+#fijamos los valores para que el usuario no extienda ni achique demasiado la ventana.
+window.minsize(400, 100) 
+window.maxsize(400, 100)
 etiqueta= Label (window, width= 15, text= "Contador")
 etiqueta.grid(row=0, column=0)
 lineEdit= Label( window, text= "88", width= 15, bg= "white")
