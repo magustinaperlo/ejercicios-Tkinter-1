@@ -1,8 +1,17 @@
 from tkinter import *
+from tkinter import messagebox
 
 def añadir():
-    PeliculaIngresadas.insert(END, ingresoPelicula.get())
-    ingresoPelicula.delete(0,END)
+#     PeliculaIngresadas.insert(END, ingresoPelicula.get())
+#     ingresoPelicula.delete(0,END)
+# debemos validar que ingrese sin espacios en la primer posicion o en su defecto una cadena VACIA
+     a = ingresoPelicula.get()
+    # entrada=input()
+     if (a.isspace() or len(a) <= 1):
+        messagebox.showinfo(message="El nombre de la película no debe comenzar con un espacio", title="Error")
+     else:
+        PeliculaIngresadas.insert(END,a)
+        ingresoPelicula.delete(0,END)
     
 ventana=Tk()
 ventana.geometry("500x300")
