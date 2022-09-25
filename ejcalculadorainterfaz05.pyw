@@ -81,3 +81,4 @@ caja2.place( x=100, y= 90)
 cajaResultado=Entry ( window, textvariable=resultado, state= "readonly")
 cajaResultado.place( x=100, y= 150)
 window.mainloop()
+#ME ENCANTO EL CURSOR CORAZONCITO !
